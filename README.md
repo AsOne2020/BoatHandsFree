@@ -1,23 +1,9 @@
-**Mega hacky, still in dev, not elegant at all. Don't use!**
+# BoatHandsFree
 
-## fabric-mod-template
+[🌏 简体中文](README.md)  |  [🌐 English](README_en.md)
 
-[![License](https://img.shields.io/github/license/Fallen-Breath/fabric-mod-template.svg)](http://www.gnu.org/licenses/lgpl-3.0.html)
-[![workflow](https://github.com/Fallen-Breath/fabric-mod-template/actions/workflows/gradle.yml/badge.svg)](https://github.com/Fallen-Breath/fabric-mod-template/actions/workflows/gradle.yml)
+**BoatHandsFree** 是一个 **Minecraft 客户端模组**，让玩家在 **划船时操作不受限制**。
 
-fallen's fabric mod template
+在原版 Minecraft 中，当玩家在划船时，操作会受到限制，无法同时进行**攻击、使用物品以及与实体或方块交互**等操作，这给玩家带来了负面体验。
 
-If you find it helpful, a credit to this template in your project will be greatly appreciated
-
-## To use
-
-1. Clone / Use this template to get a new project
-2. Search `[FEATURE]` in the project, delete or uncomment those addons
-3. Setup the mod
-    - Edit java package name
-    - Edit [gradle.properties](gradle.properties) for mod id / name etc.
-    - Edit mod name in [bug_report.yml](.github/ISSUE_TEMPLATE/bug_report.yml)
-    - Edit [common.gradle](common.gradle) for mod file location constants
-    - Change the Minecraft versions in [settings.json](settings.json), [build.gradle](build.gradle), and files in the [versions](versions) folder
-    - Search `template` in the project to see if there are any missing unedited stuffs
-4. Edit [README](README.md) for the new mod
+本模组 **移除了这些限制**，让玩家可以在划船过程中进行攻击、使用物品以及与实体或方块交互，使船上操作更灵活。

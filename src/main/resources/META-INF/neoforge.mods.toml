@@ -1,16 +1,16 @@
 modLoader = "javafml"
 loaderVersion = "[1,)"
 license = "LGPLv3"
-issueTrackerURL = "https://github.com/AsOne2020/fabric-mod-template/issues"
+issueTrackerURL = "https://github.com/AsOne2020/BoatHandsFree/issues"
 
 [[mods]]
 modId = "${id}"
 version = "${version}"
 displayName = "${name}"
-displayURL = "https://modrinth.com/mod/fabric-mod-template"
+displayURL = "https://modrinth.com/mod/BoatHandsFree"
 authors = "As_One"
 description = '''
-Template for my fabric mods
+Allows players to attack, use items, and interact while rowing a boat.
 '''
 logoFile = "icon.png"
 
@@ -19,7 +19,7 @@ modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_dependency}"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
 
 [[mixins]]
 config = "${id}.mixins.json"

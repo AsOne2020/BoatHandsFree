@@ -4,26 +4,26 @@
   "version": "${version}",
 
   "name": "${name}",
-  "description": "Template for my fabric mods",
+  "description": "Allows players to attack, use items, and interact while rowing a boat.",
   "authors": [
     "As_One"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/fabric-mod-template",
-    "issues": "https://github.com/AsOne2020/fabric-mod-template/issues",
-    "sources": "https://github.com/AsOne2020/fabric-mod-template"
+    "homepage": "https://modrinth.com/mod/BoatHandsFree",
+    "issues": "https://github.com/AsOne2020/BoatHandsFree/issues",
+    "sources": "https://github.com/AsOne2020/BoatHandsFree"
   },
   "license": "LGPLv3",
-  "icon": "assets/template_mod/icon.png",
+  "icon": "assets/boathandsfree/icon.png",
 
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "me.asone.template_mod.TemplateMod"
+      "me.asone.boathandsfree.BoatHandsFree"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json"
+    "boathandsfree.mixins.json"
   ],
 
   "depends": {
