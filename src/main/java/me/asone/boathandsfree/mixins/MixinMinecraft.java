@@ -20,19 +20,27 @@
 
 package me.asone.boathandsfree.mixins;
 
-import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.client.render.item.HeldItemRenderer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(HeldItemRenderer.class)
-public class MixinHeldItemRenderer {
+@Mixin(Minecraft.class)
+public class MixinMinecraft {
 	@Redirect(
-			method = "updateHeldItems",
-			at = @At(value = "INVOKE", target = "Lnet/minecraft/client/network/ClientPlayerEntity;isRiding()Z")
+			method = "startAttack",
+			at = @At(value = "INVOKE", target = "Lnet/minecraft/client/player/LocalPlayer;isHandsBusy()Z")
 	)
-	private boolean isRiding(ClientPlayerEntity player) {
-		return player.isRiding() && !player.isUsingItem();
+	private boolean startAttackIsHandsBusy(LocalPlayer player) {
+		return false;
+	}
+
+	@Redirect(
+			method = "startUseItem",
+			at = @At(value = "INVOKE", target = "Lnet/minecraft/client/player/LocalPlayer;isHandsBusy()Z")
+	)
+	private boolean startUseItemIsHandsBusy(LocalPlayer player) {
+		return false;
 	}
 }

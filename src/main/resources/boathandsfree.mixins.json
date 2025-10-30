@@ -4,8 +4,8 @@
   "package": "me.asone.boathandsfree.mixins",
   "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
   "client": [
-    "MixinHeldItemRenderer",
-    "MixinMinecraftClient"
+    "MixinItemInHandRenderer",
+    "MixinMinecraft"
   ],
   "injectors": {
     "defaultRequire": 1
