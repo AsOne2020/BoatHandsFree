@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "me.asone.boathandsfree.mixins",
-  "compatibilityLevel": "{{COMPATIBILITY_LEVEL}}",
+  "compatibilityLevel": "${java}",
   "client": [
     "MixinItemInHandRenderer",
     "MixinMinecraft"

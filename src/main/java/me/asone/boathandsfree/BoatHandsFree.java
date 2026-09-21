@@ -21,30 +21,30 @@
 
 package me.asone.boathandsfree;
 
-//#if FABRIC
+//? fabric {
 import net.fabricmc.api.ModInitializer;
-//#elseif FORGE
-//$$ import net.minecraftforge.fml.common.Mod;
-//#elseif NEOFORGE
-//$$ import net.neoforged.fml.common.Mod;
-//#endif
+//?} elif forge {
+/*import net.minecraftforge.fml.common.Mod;
+*///?} elif neoforge {
+/*import net.neoforged.fml.common.Mod;
+*///?}
 
-//#if FORGE_LIKE
-//$$ @Mod(BoatHandsFree.MOD_ID)
-//#endif
+//? forgelike {
+/*@Mod(BoatHandsFree.MOD_ID)
+*///?}
 public class BoatHandsFree
-		//#if FABRIC
+		//? fabric {
 		implements ModInitializer
-		//#endif
+		//?}
 {
 	public static final String MOD_ID = "boathandsfree";
 
-	//#if FABRIC
+	//? fabric {
 	@Override
 	public void onInitialize() {
 	}
-	//#elseif FORGE_LIKE
-	//$$ public BoatHandsFree() {
-	//$$ }
-	//#endif
+	//?} elif forgelike {
+	/*public BoatHandsFree() {
+	}
+	*///?}
 }
