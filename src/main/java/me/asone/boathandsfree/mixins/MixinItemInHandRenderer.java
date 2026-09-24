@@ -21,12 +21,15 @@
 package me.asone.boathandsfree.mixins;
 
 import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.client.renderer.ItemInHandRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(ItemInHandRenderer.class)
+//? if <=26.2 {
+/*@Mixin(net.minecraft.client.renderer.ItemInHandRenderer.class)
+*///?} else {
+@Mixin(net.minecraft.client.player.FirstPersonHandsAndItems.class)
+//?}
 public class MixinItemInHandRenderer {
 	@Redirect(
 			method = "tick",
